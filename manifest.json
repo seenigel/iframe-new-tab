@@ -1,0 +1,24 @@
+{
+	"name": "Iframe in new tab",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "Open an iframe in a new window",
+    "options_page": "options.html",
+	"browser_action": {
+	    "default_icon": "icon-128.png",
+		"default_popup": "menu.html",
+        "default_title": "{}" 
+	},
+	"icons": {
+        "16": "icon-16.png",
+        "48": "icon-128.png"
+	},
+    "background": {
+        "page": "background.html"
+    },
+	"permissions": [
+        "tabs",
+        "contextMenus",
+        "https://*/*"
+    ]
+}
