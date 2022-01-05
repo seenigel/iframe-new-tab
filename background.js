@@ -10,10 +10,7 @@ function getClickHandler(destination){
 
     return function(info, tab){                                                        
         const url = info.frameUrl
-        var path_array = url.split('/')
-        path_array
-        var dest_url = path_array.join('/') 
-        window.open(dest_url, '_blank');
+        window.open(url, '_blank');
     };                                                                               
 };                                                                                 
 /**                                                                                
